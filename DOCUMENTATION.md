@@ -83,6 +83,56 @@ HtmlDurationPicker.refresh();
 That's it! Let the magic happen!
 </details>
 
+### VueJS
+<details>
+  <summary>Click to expand!</summary>
+    
+#### Installation
+Install the package via npm
+```
+npm i html-duration-picker
+```
+
+#### Usage
+
+1. Import the package in your Component
+```
+import * as HtmlDurationPicker from 'html-duration-picker';
+```
+2. Add a ```html-duration-picker``` class on any ```<input>``` box. Like this:
+```
+<input type="text" class="html-duration-picker" v-model="duration">
+```
+3. Initialize the HtmlDurationPicker for the Component
+```
+  mounted() 
+  {
+    HtmlDurationPicker.init();
+  }
+```
+
+4. Initialize the HtmlDurationPicker for the Component
+```
+  data() 
+  {
+    return {
+      duration: '00:00', 
+    };
+    HtmlDurationPicker.init();
+  }
+```
+
+> Keep duration in this string format otherwise you might encounter weird behaviors (Issue [#100](https://github.com/nadchif/html-duration-picker.js/issues/100))
+
+To update dynamically loaded input boxes, you execute
+```
+HtmlDurationPicker.refresh();
+```
+  
+That's it! Let the magic happen!
+</details>
+
+
 Options
 ------
 
